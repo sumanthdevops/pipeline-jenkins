@@ -1,6 +1,7 @@
 ---
 - hosts: 13.234.32.133 
   become: True
+  remote_src: yes
   tasks:
     - name: Install packages
       yum:
